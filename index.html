@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body style="background-image:url('./assets/wallpaper.jpg')";>
+    <header class="header">
+        <h2>Encriptador de Texto</h2>
+    </header>
+    <main class="container">
+        <section class="container__secciones">
+            <div>
+                <textarea id="textoIngresado" class="container__texto__cuadro" type="text" placeholder="Ingrese el texto aquí"></textarea>
+                <p class="container__especificaciones">Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="container__botones">
+                <button class="container__botones__diseño" onclick="botonEncriptar()">Encriptar</button>
+                <button class="container__botones__diseño" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="container__secciones">
+            <textarea id="textoMostrado" class="container__texto__cuadro" type="text" placeholder="El texto encriptado aparecerá aquí" disabled></textarea>
+            <button class="container__botones__diseño" onclick="copiarAlPortapapeles()">Copiar</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p><strong>Desarrollado por Estefany Rodríguez - 2024</strong></p>
+        <div>
+            <a class="footer__enlaces" href="https://github.com/EstefanyRodriguezP">
+                <img src="./assets/icons8-github-48.png" alt=""></a>
+            <a class="footer__enlaces" href="https://www.linkedin.com/in/estefany-rodr%C3%ADguez-p%C3%A9rez/">
+                <img src="./assets/icons8-linkedin-48.png" alt=""></a>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+<!-- imagenes:
+https://www.wallpaperflare.com/search?wallpaper=cherry+blossom 
+-->
